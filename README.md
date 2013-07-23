@@ -60,6 +60,7 @@ PARAMS: estimated,priority,real
 `````
 
 4. Commit
+
 `````python
 gitr commit -c COMMENT
 
