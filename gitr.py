@@ -23,7 +23,6 @@ except ImportError as exc:
     logging.info("pip install gitpython") 
     sys.exit(2)
 
-
 def get_short_id(string):
     short_id = string.split('#')
     ret = None
@@ -50,7 +49,11 @@ def get_card_by_id(listr, short_id):
 
 def checkout_by_id(repo, short_id, branch_type='F'):
     branch_id = "%c-#%d" % (branch_type, short_id)
-    repo.remotes.origin.fetch()
+
+    try:
+        repo.remotes.origin.fetch()
+    except AssertionError:
+        pass
 
     if (branch_id == repo.active_branch.name):
         return
@@ -229,6 +232,9 @@ def main():
             short_id = options.id
             create_list = client.get_list(CREATE_LIST_ID)
             card = get_card_by_id(create_list, short_id)
+
+            if not card:
+                handle_error('Card not found')
 
             full_title = '%dº (%d,%d) %s' % (priority, t_estimated, 
                                              t_real, card.name)
