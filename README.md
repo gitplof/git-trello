@@ -50,6 +50,7 @@ PARAMS: estimated,priority,real (estimated is required)
 `````
 
 3. Update
+
 `````python
 gitr update -t TITLE -d DESCRIPTION -p PARAMS 
 
