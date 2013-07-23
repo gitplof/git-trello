@@ -85,11 +85,11 @@ gitr push -c COMMENT
 COMMENT: card comment
 `````
 
-### 7. Reload ###
+### 7. Rebuild ###
 Move the card to the branch doing.
 
 `````python
-gitr reload
+gitr rebuild
 `````
 
 ### 8. Members ###
