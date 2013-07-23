@@ -14,7 +14,7 @@ Options:
   -d DESCRIPTION, --description=DESCRIPTION
 `````
 
-1. Config
+### 1. Config ###
 
 1.1. Save the config to ~/.gitr.json
 `````python
@@ -27,7 +27,7 @@ gitr config -p <key:value, key2:value2, ...>
 gitr config -p CREATE_LIST_ID:3726948216978264921634982764928176,USER:0
 `````
 
-2. Load
+### 2. Load ###
 
 2.1. Load with id
 
@@ -49,7 +49,7 @@ USERS: users assigned to the card
 PARAMS: estimated,priority,real (estimated is required)
 `````
 
-3. Update
+### 3. Update ###
 
 `````python
 gitr update -t TITLE -d DESCRIPTION -p PARAMS 
@@ -59,7 +59,7 @@ DESCRIPTION: card description
 PARAMS: estimated,priority,real
 `````
 
-4. Commit
+### 4. Commit ###
 
 `````python
 gitr commit -c COMMENT
@@ -67,7 +67,7 @@ gitr commit -c COMMENT
 COMMENT: card comment (required)
 `````
 
-5. Test
+### 5. Test ###
 This argument creates a new branch for integration.
 
 `````python
@@ -76,7 +76,7 @@ gitr test -c COMMENT
 COMMENT: card comment
 `````
 
-6. Push
+### 6. Push ###
 This argument moves the card to the list made ​​and makes a push to the repository.
 
 `````python
@@ -85,14 +85,15 @@ gitr push -c COMMENT
 COMMENT: card comment
 `````
 
-7. Reload
+### 7. Reload ###
 Move the card to the branch doing.
 
 `````python
 gitr reload
 `````
 
-8. Members
+### 8. Members ###
+
 List all trello members.
 
 `````python
