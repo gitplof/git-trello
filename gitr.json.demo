@@ -1,0 +1,12 @@
+{
+    "API_KEY": "?",
+    "API_SECRET": "?",
+    "TOKEN": "?",
+    "BOARD_ID": "?",
+    "CREATE_LIST_ID": "?",
+    "DONE_LIST_ID": "?",
+    "USER": "0",
+    "MEMBERS": [
+        "?"
+    ]
+}

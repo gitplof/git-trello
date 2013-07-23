@@ -1,0 +1,11 @@
+*.*~
+*.pyc
+*.log
+*.pyc
+*.DS_Store
+*.directory
+*.sql
+
+trello
+gitr.json
+
