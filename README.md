@@ -1,3 +1,12 @@
+## Introduction ##
+This script aims to make easy the work with trello and git. 
+
+**NOTE:** It`s designed for the way we work.
+
+
+
+
+
 ## Gitr usage ##
 
 `````python
