@@ -8,7 +8,9 @@ Our philosophy is based in create one branch for each feature. Then we open a in
 
 ### Named branched ###
 the feature branches use the followeens rules
+
 Feature: F-#trello-id (e.g F-#32)
+
 Integration: I-#trello-id (I-#32)
 
 
