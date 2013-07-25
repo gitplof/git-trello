@@ -36,6 +36,7 @@ Now, we advise set up a shortcut or alias. For unix systems you can do anything 
 `````python
  alias gitr='python $HOME/git-trello/gitr.py'
 `````
+Now you are ready for use this tool
 
 ## Gitr usage ##
 
