@@ -12,11 +12,17 @@ Feature: F-#trello-id (e.g F-#32)
 Integration: I-#trello-id (I-#32)
 
 ## Get starter ##
-The first task is download it. You would clone the repositorie
+The first task is download it. You can clone the repositorie
 
 
 `````python
 git clone git@github.com:gitplof/git-trello.git
+`````
+Now, we advise set up a shortcut or alias. For unix systems you can do anything like this:
+
+
+`````python
+ alias gitr='python $HOME/git-trello/gitr.py'
 `````
 
 ## Gitr usage ##
