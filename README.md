@@ -15,7 +15,9 @@ Integration: I-#trello-id (I-#32)
 ## Dependencies ##
 
 Python 2.7
+
 oauth2
+
 gitpython
 
 
