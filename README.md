@@ -7,11 +7,11 @@ This script aims to make easy the work with trello and git.
 Our philosophy is based in create one branch for each feature. Then we open a integration branch from QA branch.
 
 ### Named branched ###
-the feature branches use the followeens rules
+The feature branches use the followeens rules
 
 Feature: F-#trello-id (e.g F-#32)
 
-Integration: I-#trello-id (I-#32)
+Integration: I-#trello-id (e.g I-#32)
 
 
 ## Dependencies ##
