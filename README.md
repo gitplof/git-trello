@@ -3,9 +3,21 @@ This script aims to make easy the work with trello and git.
 
 **NOTE:** It`s designed for the way we work.
 
+### Our Workflow ###
+Our philosophy is based in create one branch for each feature. Then we open a integration branch from QA branch.
+
+### Named branched ###
+the feature branches use the followeens rules
+Feature: F-#trello-id (e.g F-#32)
+Integration: I-#trello-id (I-#32)
+
+## Get starter ##
+The first task is download it. You would clone the repositorie
 
 
-
+`````python
+git clone git@github.com:gitplof/git-trello.git
+`````
 
 ## Gitr usage ##
 
