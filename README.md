@@ -11,6 +11,14 @@ the feature branches use the followeens rules
 Feature: F-#trello-id (e.g F-#32)
 Integration: I-#trello-id (I-#32)
 
+
+## Dependencies ##
+
+Python 2.7
+oauth2
+gitpython
+
+
 ## Get starter ##
 The first task is download it. You can clone the repositorie
 
