@@ -37,6 +37,8 @@ Now, we advise set up a shortcut or alias. For unix systems you can do anything 
 alias gitr='python $HOME/git-trello/gitr.py'
 `````
 Now you need to provide you keys from trello to script. [Generate key](https://trello.com/1/appKey/generate)
+. You must kept you api key and you secret key.
+
 
 
 Now you are ready for use this tool
