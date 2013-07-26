@@ -34,11 +34,17 @@ Now, we advise set up a shortcut or alias. For unix systems you can do anything 
 
 
 `````python
- alias gitr='python $HOME/git-trello/gitr.py'
+alias gitr='python $HOME/git-trello/gitr.py'
 `````
+Now you need to provide you keys from trello to script. [Generate key](https://trello.com/1/appKey/generate)
+
+
 Now you are ready for use this tool
 
-## Gitr usage ##
+
+## Documentation ##
+
+### Gitr usage ###
 
 `````python
 Usage: gitr (load|rebuild|commit|push|test|config|update) [options] args
@@ -61,7 +67,7 @@ Options:
 gitr config
 `````
 
-1.2. Update de config file
+1.2. Update to config file
 `````python
 gitr config -p <key:value, key2:value2, ...>
 gitr config -p CREATE_LIST_ID:3726948216978264921634982764928176,USER:0
