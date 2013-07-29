@@ -158,9 +158,7 @@ def main():
     client = TrelloClient(api_key=json_data['API_KEY'], 
                           token=json_data['TOKEN'], 
                           api_secret=json_data['API_SECRET'])
-
-    # board = client.get_board(BOARD_ID)
-
+    
     if ('update' in args):
         create_list = client.get_list(CREATE_LIST_ID)
         card = get_current_card(repo, create_list)
@@ -195,7 +193,9 @@ def main():
     elif ('members' in args):
         for idx, member_id in enumerate(MEMBERS):
             member = client.get_member(member_id)
-            logging.info("* %d.%s (%s)" % (idx, member.username, member.full_name))
+
+            logging.info("*%s %d. %s (%s)" % ((USER == member_id) and '*' or '', 
+                idx, member.username, member.full_name))
 
     elif ('config' in args):
         if options.params:
@@ -210,13 +210,16 @@ def main():
                 json_data[key] = value
 
         if options.user:
-            users = check_params(options.user)
             json_data['USER'] = options.user
 
-        if options.params or options.user:
-            with open(conf_path, 'w') as outfile:
-              json.dump(json_data, outfile)
+        if not (options.params and options.user):
+            members = client.get_board_members(BOARD_ID)
+            json_data['MEMBERS'] = [member['id'] for member in members]
+            json_data['USER'] = json_data['MEMBERS'].index(client.me()['id'])
 
+        with open(conf_path, 'w') as outfile:
+          json.dump(json_data, outfile)
+        
         for key, value in json_data.items():
             logging.info("* %s: %s" %(key, value))
 

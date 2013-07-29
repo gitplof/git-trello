@@ -108,7 +108,15 @@ class TrelloClient(object):
             boards.append(self._board_from_json(obj))
 
         return boards
-    
+
+    def me(self):
+        obj = self.fetch_json('/members/me/')
+        return obj
+
+    def get_board_members(self, board_id):
+        obj = self.fetch_json('/boards/%s/members/' % board_id)
+        return obj
+
     def get_board(self, board_id):
         obj = self.fetch_json('/boards/' + board_id)
         return self._board_from_json(obj)
