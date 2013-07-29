@@ -1,4 +1,52 @@
-## Gitr usage ##
+## Introduction ##
+This script aims to make easy the work with trello and git. 
+
+**NOTE:** It`s designed for the way we work.
+
+### Our Workflow ###
+Our philosophy is based in create one branch for each feature. Then we open a integration branch from QA branch.
+
+### Named branched ###
+The feature branches use the followeens rules
+
+Feature: F-#trello-id (e.g F-#32)
+
+Integration: I-#trello-id (e.g I-#32)
+
+
+## Dependencies ##
+
+Python 2.7
+
+oauth2
+
+gitpython
+
+
+## Get starter ##
+The first task is download it. You can clone the repositorie
+
+
+`````python
+git clone git@github.com:gitplof/git-trello.git
+`````
+Now, we advise set up a shortcut or alias. For unix systems you can do anything like this:
+
+
+`````python
+alias gitr='python $HOME/git-trello/gitr.py'
+`````
+Now you need to provide you keys from trello to script. [Generate key](https://trello.com/1/appKey/generate)
+. You must kept you api key and you secret key.
+
+
+
+Now you are ready for use this tool
+
+
+## Documentation ##
+
+### Gitr usage ###
 
 `````python
 Usage: gitr (load|rebuild|commit|push|test|config|update) [options] args
@@ -21,7 +69,7 @@ Options:
 gitr config
 `````
 
-1.2. Update de config file
+1.2. Update to config file
 `````python
 gitr config -p <key:value, key2:value2, ...>
 gitr config -p CREATE_LIST_ID:3726948216978264921634982764928176,USER:0
