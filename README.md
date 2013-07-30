@@ -16,7 +16,7 @@ Integration: I-#trello-id (e.g I-#32)
 
 ## Dependencies ##
 
-Python 2.7.
+Python 2.7
 
 oauth2
 
@@ -37,8 +37,8 @@ Now, we advise set up a shortcut or alias. For unix systems you can do anything 
 alias gitr='python $HOME/git-trello/gitr.py'
 `````
 Now you need to provide you keys from trello to script. [Generate key](https://trello.com/1/appKey/generate)
-. You must kept you api key and you secret key.
-
+. You must keep you api key and you secret key.
+Them you must follow [this address](https://trello.com/1/authorize?key=substitutewithyourapplicationkey&name=My+Application&expiration=never&response_type=toke://trello.com/1/authorize?key=substitutewithyourapplicationkey&name=My+Application&expiration=never&response_type=token) You must substitute API_KEY with your api_key that you get on the previos step 
 
 
 Now you are ready for use this tool
