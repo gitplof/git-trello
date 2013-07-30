@@ -16,7 +16,7 @@ Integration: I-#trello-id (e.g I-#32)
 
 ## Dependencies ##
 
-Python 2.7
+Python 2.7.
 
 oauth2
 
